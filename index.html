@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Longuemire & Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="/">YourBrand</a>
+      <button id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="industry.html">Industries</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="why.html">Why Choose Me</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav> 
+    <section class="hero">
+      <h1>Helping you grow your business—without burnout</h1>
+      <p>Clarity, Confidence, Consulting</p>
+      <a class="btn" href="#contact">Book a call</a>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="services" class="grid-3">
+      <article class="card"><h2>Service One</h2><p>What you do.</p></article>
+      <article class="card"><h2>Service Two</h2><p>What you do.</p></article>
+      <article class="card"><h2>Service Three</h2><p>What you do.</p></article>
+    </section>
+
+    <section id="work">
+      <h2>Recent Work</h2>
+      <div class="grid-3">
+        <article class="card">Project A</article>
+        <article class="card">Project B</article>
+        <article class="card">Project C</article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let’s talk</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="How can I help?" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container"><small>© YourBrand</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
